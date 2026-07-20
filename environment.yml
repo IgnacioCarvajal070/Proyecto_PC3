@@ -1,0 +1,16 @@
+name: pcec3
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - sqlite
+  - ruff
+  - mypy
+  - pytest
+  - tabulate
+  - types-tabulate
+  - pip:
+    - selenium
+    - sqlmodel
+    - -e .

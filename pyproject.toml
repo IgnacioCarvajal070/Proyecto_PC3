@@ -1,0 +1,32 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "pcec3"
+version = "0.0.1"
+description = "A short description of the project."
+authors = [
+  { name = "Daniel Tomigo-Ignacio Carvajal" },
+]
+
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    
+]
+requires-python = "~=3.11.0"
+
+
+[tool.ruff]
+line-length = 88
+src = ["pcec3"]
+include = ["pyproject.toml", "pcec3/**/*.py"]
+
+[tool.ruff.lint]
+extend-select = ["E", "F", "W"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["pcec3"]
+force-sort-within-sections = true
+
