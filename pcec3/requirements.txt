@@ -1,0 +1,8 @@
+selenium
+sqlmodel
+tabulate
+types-tabulate
+ruff
+mypy
+pytest
+-e .
